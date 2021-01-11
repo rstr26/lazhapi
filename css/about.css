@@ -1,0 +1,17 @@
+.transition{
+    text-align: center;
+}
+.img img{
+    margin-top: 0;
+    animation: slide 5s;
+}
+.names{
+    font-family: helvetica;
+    color: rgb(18, 18, 18);
+    margin-top: 400px;
+    animation: slide 5s forwards;
+}
+@keyframes slide{
+    from{ margin-top: -800px;}
+    to{ margin-top: 0px;}
+}

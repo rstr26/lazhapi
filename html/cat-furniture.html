@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazhapi: Your #1 Online Shop</title>
+    <link rel="stylesheet" href="/css/categories.css">
+</head>
+
+<body onload="cart(); fetchFurniture()">
+    <div class="nav">
+        <div id="logo">
+            <img src="/img/Lazhapi Logo.png" alt="Lazhapi Logo">
+        </div>
+
+        <div id="nav-options">
+            <a href="about.html"><li class="options">ABOUT US</li></a>
+            <a href="cart.html"><li class="options">MY CART<span class="badge" id="cart-count">0</span></li></a>
+            <a href="home.html"><li class="options">HOME</li></a>
+        </div>
+    </div>
+
+    <div class="content" id="content">
+        <div class="cat-list">
+            <h3 onclick="location.href='cat-gadgets.html'">Gadgets</h3>
+            <h3 onclick="location.href='cat-fashion.html'">Fashion</h3>
+            <h3 style="background-color: rgb(241, 236, 64);">Furniture</h3>
+            <h3 onclick="location.href='cat-tools.html'">Tools</h3>
+            <h3 onclick="location.href='cat-books.html'">Books</h3>
+        </div>
+
+        <div class="product-cont" id="product-cont">
+            
+        </div>
+    </div>
+
+    <div id="view-product" style="display: none;">
+        <div id="product">
+         
+        </div>
+    
+        <div class="product-option">
+            <div class="prod-options" id="add-cart" onclick="addToCart()">
+                <p>Add To Cart</p>
+            </div>
+            <div class="prod-options" onclick="location.href='buy-options.html'">
+                <p>Buy Now</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script type ="text/javascript" src="https://cdn.chec.io/v2/commerce.js"></script>
+<script src="/js/lazhapi.js"></script>
+<script src="/js/cat-product.js"></script>
+
+</html>

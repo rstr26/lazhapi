@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: helvetica;
+}
+a{
+    text-decoration: none;
+    color: rgb(18,18,18);
+}
+/* start of nav css */
+.nav{
+    background-color: rgb(18,18,18);
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    border-bottom: solid yellow;
+}
+#logo img{
+    float: left;
+    width: 100px;
+    margin-left: 20px;
+}
+.options{
+    float: right;
+    text-decoration: none;
+    color: white;
+    padding: 45px 30px;
+    margin-right: 0;
+    font-weight: 600;
+    position: relative;
+}
+.badge{
+    position: absolute;
+    margin-top: -10px;
+    padding: 2px 6px;
+    background-color: red;
+    border-radius: 50%;
+}
+.options:hover{
+    cursor: pointer;
+    background-color: rgb(241, 236, 64);
+    color: black;
+    transition: .5s;
+}
+/* end of nav css */
+
+/* start of banner css */
+#banner{
+    margin: auto;
+    margin-top: 110px;
+}
+#banner img{
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    height: 300px;
+}
+/* end of banner css */
+
+/* start of categories css */
+#categories{
+    width: 80%;
+    background-color: rgb(18,18,18);
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    opacity: 90%;
+    overflow: hidden;
+}
+#categories li{
+    display: inline;
+    color: whitesmoke;
+    padding: 0 70px 0 70px;
+    cursor: pointer;
+    overflow: hidden;
+}
+#categories li:hover{
+    background-color: rgb(241, 236, 64);
+    transition: .5s;
+    color: black;
+}
+/* end of categories css */
+
+/*start of product-card css */
+#featured{
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    margin-top: 10px;
+    height: 250px;
+    color: rgb(18,18,18);
+}
+.price{
+    color: rgb(241, 236, 64);
+    -webkit-text-stroke: .3px rgb(18,18,18);
+    
+}
+.product-card{
+    display: inline-block;
+    background-color: white;
+    width: 210px;
+    height: 240px;
+}
+.product-card:hover{
+    box-shadow: 2px 2px gray;
+    border-radius: 10px;
+    transition: .5s;
+    border: .5px solid rgb(241, 236, 64);
+    cursor: pointer;
+}
+.product-card img{
+    height: 120px;
+    width: 120px;
+    margin-top: 10px;
+}
+.prod-id{
+    display: none;
+}
+/* end of product-card css*/
+
+/* start of view-product css */
+#product{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 120px;
+}
+.product-image{
+    margin-left: 20px;
+    height: 120px;
+    width: 400px;
+    height: 400px;
+}
+.product-image img{
+    width: 400px;
+    height: 400px;
+}
+.product-details{
+    margin-right: 20px;
+    color: rgb(18,18,18);
+    height: 120px;
+}
+.product-option{
+    margin: 20px 0 0 20px;
+}
+.prod-options{
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid rgb(18,18,18);
+    font-size: 25px;
+    cursor: pointer;
+}
+.prod-options:hover{
+    background-color: rgb(241, 236, 64);
+    color: rgb(18,18,18);
+    transition: .5s;
+    border-radius: 10px;
+}
+/* end of view-product css */

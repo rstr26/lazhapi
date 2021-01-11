@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You!</title>
+    <link rel="stylesheet" href="/css/order-placed.css">
+</head>
+
+<body onload="cart()">
+    <div class="nav">
+        <div class="nav">
+            <div id="logo">
+                <img src="/img/Lazhapi Logo.png" alt="Lazhapi Logo">
+            </div>
+    
+            <div id="nav-options">
+                <a href="about.html"><li class="options">ABOUT US</li></a>
+                <a href="cart.html"><li class="options">MY CART<span class="badge" id="cart-count">0</span></li></a>
+                <a href="home.html"><li class="options">HOME</li></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="placed">
+        <img src="/img/delivery.png" alt="">
+    </div>
+    <div style="text-align: center; color: rgb(18, 18, 18); font-family: helvetica;">
+        <h1>Thank You for Purchasing our Product!</h1>
+        <p style="color: gray;">&copy; Lazhapi Inc. | BSIT 3G 1st Sem Project</p>
+    </div>
+</body>
+
+<script type ="text/javascript" src="https://cdn.chec.io/v2/commerce.js"></script>
+<script src="/js/lazhapi.js"></script>
+<script>
+    var cartCount = document.getElementById('cart-count');
+
+    const cart = async () => {
+    lazhapi.cart.retrieve().then((response) => {
+        cartCount.innerHTML = response.total_items
+    });
+}
+</script>
+
+</html>

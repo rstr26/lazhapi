@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/cart.css">
+    <title>Lazhapi: Your #1 Online Shop</title>
+</head>
+
+<body onload="fetchCartCount(); fetchCart()">
+    <div class="nav">
+        <div id="logo">
+            <img src="/img/Lazhapi Logo.png" alt="Lazhapi Logo">
+        </div>
+
+        <div id="nav-options">
+            <a href="about.html"><li class="options">ABOUT US</li></a>
+            <a onclick="location.reload()"><li class="options">MY CART<span class="badge" id="cart-count">0</span></li></a>
+            <a href="home.html"><li class="options">HOME</li></a>
+        </div>
+    </div>
+
+    <div class="cart" id="cart">
+        <div>
+            <h1 style="margin-top: 10px; margin-bottom: 5px;">My Cart</h1>
+            <button id="empty-cart" onclick="emptyCart()">Empty Cart</button>
+            <hr style="width: 80%; margin: auto;">
+        </div>
+        <div class="cartContainer" id="cart-container">
+        
+        </div>
+    </div>
+
+    <div id="view-product" style="display: none;">
+        <div id="product">
+         
+        </div>
+    
+        <div class="product-option">
+            <div class="prod-options" onclick="location.href='buy-options.html'">
+                <p>Buy Now</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script type ="text/javascript" src="https://cdn.chec.io/v2/commerce.js"></script>
+<script src="/js/lazhapi.js"></script>
+<script src="/js/cart.js"></script>
+
+</html>

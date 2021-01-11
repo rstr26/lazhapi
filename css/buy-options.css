@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: helvetica;
+}
+a{
+    text-decoration: none;
+    color: rgb(18,18,18);
+}
+/* start of nav css */
+.nav{
+    background-color: rgb(18,18,18);
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    border-bottom: solid yellow;
+}
+#logo img{
+    float: left;
+    width: 100px;
+    margin-left: 20px;
+}
+.options{
+    float: right;
+    text-decoration: none;
+    color: white;
+    padding: 45px 30px;
+    margin-right: 0;
+    font-weight: 600;
+    position: relative;
+}
+.badge{
+    position: absolute;
+    margin-top: -10px;
+    padding: 2px 6px;
+    background-color: red;
+    border-radius: 50%;
+}
+.options:hover{
+    cursor: pointer;
+    background-color: rgb(241, 236, 64);
+    color: black;
+    transition: .5s;
+}
+/* end of nav css */
+
+/* start of pay-options */
+.pay-options{
+    margin-top: 200px;
+    width: 40%;
+    margin-left: 30%;
+    text-align: center;
+}
+.opt{
+    border: 1px solid rgb(18,18,18);
+    margin-top: 5px;
+    padding: 20px 0;
+    color: rgb(18,18,18)    ;
+}
+.opt:hover{
+    border-radius: 20px;
+    background-color: rgb(241, 236, 64);
+    color:snow;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.opt-cod{
+    margin-top: 150px;
+    width: 60%;
+    margin-left: 20%;
+    text-align: center;
+    display: none;
+}
+.textbox{
+    width: 250px;
+    height: 30px;
+    font-size: 20px;
+    margin-top: 5px;
+}
+.btn{
+    border: 1px solid rgb(18,18,18);
+    color: rgb(18,18,18);
+    margin-bottom: 5px;
+}
+.btn:hover{
+    border-radius: 20px;
+    background-color: rgb(241, 236, 64);
+    color:snow;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.opt-cc{
+    margin-top: 150px;
+    width: 60%;
+    margin-left: 20%;
+    text-align: center;
+    display: none;
+}

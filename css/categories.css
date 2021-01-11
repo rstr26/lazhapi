@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: helvetica;
+}
+a{
+    text-decoration: none;
+    color: rgb(18,18,18);
+}
+body{
+    background-color: whitesmoke;
+}
+/* start of nav css */
+.nav{
+    background-color: rgb(18,18,18);
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    border-bottom: solid yellow;
+}
+#logo img{
+    float: left;
+    width: 100px;
+    margin-left: 20px;
+}
+.options{
+    float: right;
+    text-decoration: none;
+    color: white;
+    padding: 45px 30px;
+    margin-right: 0;
+    font-weight: 600;
+    position: relative;
+}
+.badge{
+    position: absolute;
+    margin-top: -10px;
+    padding: 2px 6px;
+    background-color: red;
+    border-radius: 50%;
+}
+.options:hover{
+    cursor: pointer;
+    background-color: rgb(241, 236, 64);
+    color: black;
+    transition: .5s;
+}
+/* end of nav css */
+
+/* start of content css */
+.content{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-column-gap: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 120px;
+}
+.cat-list, .product-cont{
+    background-color: white;
+    border: 1px solid rgb(18,18,18);
+}
+.cat-list h3{
+    padding: 10px;
+}
+.cat-list{
+    height: 210px;
+}
+.product img{
+    height: 220px;
+    width: 220px;
+    margin-top: 5px;
+}
+.product-cont{
+    text-align: center;
+}
+.product{
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    width: 230px;
+    border: 1px solid rgb(18,18,18);
+    box-shadow: 2px 2px gray;
+}
+.product:hover{
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 7px 7px gray;
+    transition: .3s;
+}
+.cat-list h3:hover{
+    background-color: rgb(241, 236, 64);
+    transition: .3s;
+    cursor: pointer;
+}
+/* end of content css */
+
+/* start of view-product css */
+#product{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 120px;
+}
+.product-image{
+    margin-left: 20px;
+    height: 120px;
+    width: 400px;
+    height: 400px;
+}
+.product-image img{
+    width: 400px;
+    height: 400px;
+}
+.product-details{
+    margin-right: 20px;
+    color: rgb(18,18,18);
+    height: 120px;
+}
+.product-option{
+    margin: 20px 0 0 20px;
+}
+.prod-options{
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid rgb(18,18,18);
+    font-size: 25px;
+    cursor: pointer;
+}
+.prod-options:hover{
+    background-color: rgb(241, 236, 64);
+    color: rgb(18,18,18);
+    transition: .5s;
+    border-radius: 10px;
+}
+/* end of view-product css */

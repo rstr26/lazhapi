@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazhapi: Your #1 Online Shop</title>
+    <link rel="stylesheet" href="/css/buy-options.css">
+</head>
+
+<body onload="cart()">
+    <div class="nav">
+        <div class="nav">
+            <div id="logo">
+                <img src="/img/Lazhapi Logo.png" alt="Lazhapi Logo">
+            </div>
+    
+            <div id="nav-options">
+                <a href="about.html"><li class="options">ABOUT US</li></a>
+                <a href="cart.html"><li class="options">MY CART<span class="badge" id="cart-count">0</span></li></a>
+                <a href="home.html"><li class="options">HOME</li></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="pay-options" id="pay-opt">
+        <h1 class="opt one" onclick="showCod()">Cash on Delivery</h1>
+        <h1 class="opt two" onclick="showCc()">Pay with Credit Card</h1>
+    </div>
+
+    <div class="opt-cod" id="cod">
+        <h1>Input Shipping Address Information</h1>
+        <input type="text" placeholder="First Name" class="textbox" id="cod-1">
+        <input type="text" placeholder="Middle Name" class="textbox" id="cod-2">
+        <input type="text" placeholder="Last Name" class="textbox" id="cod-3"><br>
+        <input type="text" placeholder="House Number & Street" class="textbox" id="cod-4">
+        <input type="text" placeholder="Barangay" class="textbox" id="cod-5"><br>
+        <input type="text" placeholder="City" class="textbox" id="cod-6">
+        <input type="text" placeholder="Province" class="textbox" id="cod-7"><br>
+        <input type="number" placeholder="Mobile Phone Number" class="textbox" id="cod-8"><br><br>
+        <h2 class="btn" onclick="fieldValidationCod()">Place Order</h2>
+        <h2 class="btn" onclick="payOpt()">Choose Another Payment Method</h2>
+    </div>
+
+    <div class="opt-cc" id="cc">
+        <h1>Input Shipping Address Information</h1>
+        <input type="text" placeholder="First Name" class="textbox" id="cc-1">
+        <input type="text" placeholder="Middle Name" class="textbox" id="cc-2">
+        <input type="text" placeholder="Last Name" class="textbox" id="cc-3"><br>
+        <input type="text" placeholder="House Number & Street" class="textbox" id="cc-4">
+        <input type="text" placeholder="Barangay" class="textbox" id="cc-5"><br>
+        <input type="text" placeholder="City" class="textbox" id="cc-6">
+        <input type="text" placeholder="Province" class="textbox" id="cc-7"><br>
+        <input type="number" placeholder="Mobile Phone Number" class="textbox" id="cc-8"><br><br>
+        <input type="number" placeholder="Card Number" class="textbox" id="cc-9">
+        <input type="text" placeholder="Name on Card" class="textbox" id="cc-10"><br>
+        <input type="text" placeholder="Expiration Date (01/2021)" class="textbox"  style="margin-bottom: 10px;" id="cc-11">
+        <h2 class="btn" onclick="fieldValidationCc()">Place Order</h2>
+        <h2 class="btn" onclick="payOpt()">Choose Another Payment Method</h2>
+    </div>
+</body>
+
+<script type ="text/javascript" src="https://cdn.chec.io/v2/commerce.js"></script>
+<script src="/js/lazhapi.js"></script>
+<script src="/js/buy-options.js"></script>
+
+</html>
