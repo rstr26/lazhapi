@@ -22,7 +22,6 @@ const featuredProducts = async () => {
         if(i == 5){
             break;
         }
-        //console.log(items.id)
     }
     cart();
 }

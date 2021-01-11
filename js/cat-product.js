@@ -43,6 +43,7 @@ const fetchFashion = async () => {
                 </div>
                 `
                 target.innerHTML += template
+                console.log(items)
             }
         }
     }
@@ -106,6 +107,7 @@ const fetchBooks = async () => {
                 </div>
                 `
                 target.innerHTML += template
+                console.log(items)
             }
         }
     }
